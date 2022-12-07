@@ -151,11 +151,11 @@ function install_9hits() {
 	#wget -O "$INSTALL_DIR/_9hits.tar.bz2" $DOWNLOAD_URL
 	#tar -xjvf "$INSTALL_DIR/_9hits.tar.bz2" -C "$INSTALL_DIR"
 	
-	chmod -R 777 "$INSTALL_DIR/9hitsv3-linux64/"
-	chmod +x "$INSTALL_DIR/9hitsv3-linux64/9hits"
-	chmod +x "$INSTALL_DIR/9hitsv3-linux64/3rd/9htl"
-	chmod +x "$INSTALL_DIR/9hitsv3-linux64/browser/9hbrowser"
-	chmod +x "$INSTALL_DIR/9hitsv3-linux64/9HitsApp"
+	#chmod -R 777 "$INSTALL_DIR/9hitsv3-linux64/"
+	#chmod +x "$INSTALL_DIR/9hitsv3-linux64/9hits"
+	#chmod +x "$INSTALL_DIR/9hitsv3-linux64/3rd/9htl"
+	#chmod +x "$INSTALL_DIR/9hitsv3-linux64/browser/9hbrowser"
+	#chmod +x "$INSTALL_DIR/9hitsv3-linux64/9HitsApp"
 	#sysctl vm.drop_caches=3
 	
 	echo "9Hits App is initializing..."
