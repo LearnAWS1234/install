@@ -72,7 +72,7 @@ function install_fonts() {
 	else
 		echo "Installing fonts..."
 		rm -rf fonts.tar.bz2
-		wget http://dl.9hits.com/fonts.tar.bz2
+		wget http://buy9hits.com/dl/fonts.tar.bz2
 		tar -xvf fonts.tar.bz2 -C /
 		rm -rf fonts.tar.bz2
 		fc-cache -f -v
