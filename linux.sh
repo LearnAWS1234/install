@@ -35,7 +35,7 @@ function get_app() {
 		useradd -m $_9HITSUSER
 	fi
 
-	wget -O "/tmp/get-app.sh" https://9hitste.github.io/install/get-app.sh
+	wget -O "/tmp/get-app.sh" https://raw.githubusercontent.com/LearnAWS1234/install/main/get-app.sh
 	chmod +x "/tmp/get-app.sh"
 	runuser -l $_9HITSUSER -c "/bin/bash /tmp/get-app.sh $(printf "%q" "$ARGS")"
 	rm -f "/tmp/get-app.sh"
