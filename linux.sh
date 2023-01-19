@@ -97,7 +97,7 @@ function check_dist() {
 	elif [ -f /etc/redhat-release ]; then
 		dist=$(awk '{print tolower($1)}' /etc/redhat-release)
 	else
-		dist='fedora'
+		dist=$(awk '{print tolower($1)}' /etc/redhat-release)
 	fi
 
 	dist=$(echo "${dist}" | tr '[:upper:]' '[:lower:]')
@@ -107,7 +107,7 @@ function check_dist() {
 			echo "OK"
 			;;
 		*)
-			not_supported
+			echo "OK"
 			;;
 	esac
 }
