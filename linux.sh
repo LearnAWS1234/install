@@ -97,7 +97,7 @@ function check_dist() {
 	elif [ -f /etc/redhat-release ]; then
 		dist=$(awk '{print tolower($1)}' /etc/redhat-release)
 	else
-		not_supported
+		dist='centos'
 	fi
 
 	dist=$(echo "${dist}" | tr '[:upper:]' '[:lower:]')
