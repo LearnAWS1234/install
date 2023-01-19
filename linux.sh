@@ -18,7 +18,7 @@ function main() {
 			install_yum
 			;;
 		*)
-			not_supported
+			install_yum
 			;;
 	esac
 	install_fonts
